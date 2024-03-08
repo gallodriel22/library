@@ -8,7 +8,7 @@ public class NavMeshAgentControlBehaviour : PlayableBehaviour
         destinationSet = false;
     }
 }
-
+//nice
 public class NavMeshAgentControlClip : PlayableAsset, ITimelineClipAsset
 {
     public ExposedReference<Transform> destination;
