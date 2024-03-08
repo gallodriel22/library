@@ -23,7 +23,7 @@ public class NavMeshAgentControlClip : PlayableAsset, ITimelineClipAsset
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
     {
         var playable = ScriptPlayable<NavMeshAgentControlBehaviour>.Create (graph, template);
-        NavMeshAgentControlBehaviour clone = playable.GetBehaviour ();
+        NavMeshAgentControlBehaviour clone = playable.GetBehaviour ();//heloo yes
         clone.destination = destination.Resolve (graph.GetResolver ());
         return playable;
     }
